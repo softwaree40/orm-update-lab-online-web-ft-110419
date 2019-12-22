@@ -20,6 +20,7 @@ class Student
         SQL
     DB[:conn].execute(sql).collect do |student|
        binding.pry
+       end
     end
 
 end
