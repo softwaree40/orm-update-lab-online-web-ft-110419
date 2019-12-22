@@ -17,8 +17,8 @@ class Student
         album TEXT
         )
         SQL
-    DB[:conn].execute(sql).map do ||
-     
+    DB[:conn].execute(sql)
+       binding.pry
     end
 
 end
