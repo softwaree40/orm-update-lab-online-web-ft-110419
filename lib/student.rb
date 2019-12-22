@@ -19,8 +19,9 @@ class Student
         )
         SQL
     DB[:conn].execute(sql).collect do |student|
-       binding.pry
+       
        end
+       binding.pry
     end
 
 end
