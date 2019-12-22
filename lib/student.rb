@@ -18,8 +18,8 @@ class Student
         grade INTEGER
         )
         SQL
-    DB[:conn].execute(sql)
-       #binding.pry
+    DB[:conn].execute(sql).collect do |student|
+       binding.pry
     end
 
 end
