@@ -14,11 +14,11 @@ class Student
       CREATE TABLE IF NOT EXISTS student (
         id INTEGER PRIMARY KEY,
         name TEXT,
-        grade TEXT
+        grade INTEGER
         )
         SQL
     DB[:conn].execute(sql)
-       binding.pry
+       #binding.pry
     end
 
 end
